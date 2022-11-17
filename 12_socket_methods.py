@@ -8,7 +8,7 @@ try:
     print("getfqdn", socket.getfqdn('www.google.com'))
     print("getaddrinfo", socket.getaddrinfo("www.google.com", None, 0, socket.SOCK_STREAM))
     print("get serv by name", socket.getservbyname('http'))
-    print("get serv by port", socket.getservbyport(25))
+    print("get serv by port", socket.getservbyport(8080))
 
 except socket.error as error:
     print(str(error))

@@ -1,4 +1,4 @@
+import socket
 
-webhost = 'localhost'
-webport = 8080
-print("Contacting %s on port %s ..." % (webhost, webport))
+for i in range(1,100):
+    socket.getservbyport(i)
